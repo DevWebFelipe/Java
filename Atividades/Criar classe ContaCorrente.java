@@ -1,17 +1,16 @@
-import java.util.Date;
-
 public class ContaCorrente {
 
     // Atributos
     private String numeroConta;
     private String numeroAgencia;
     private String nomeCliente;
-    private Date dataNascimento;
+    private LocaleDate dataNascimento;
     private double saldoConta;
+	boolean ativo = true;
 
     // Construtor
     public ContaCorrente(String numeroConta, String numeroAgencia, String nomeCliente,
-                         Date dataNascimento, double saldoConta) {
+                         LocaleDate dataNascimento, double saldoConta) {
 
         this.numeroConta = numeroConta;
         this.numeroAgencia = numeroAgencia;
@@ -61,16 +60,18 @@ public class ContaCorrente {
             return;
         }
 
+		this.ativo = false;
+		
         System.out.println("Conta " + numeroConta + " cancelada.");
         System.out.println("Motivo: " + justificativa);
     }
 
-    public void consultarExtrato(Date dataInicio, Date dataFim) {
+    public List void consultarExtrato(LocaleDate dataInicio, LocaleDate dataFim) {
         System.out.println("Consultando extrato da conta " + numeroConta +
                            " de " + dataInicio + " até " + dataFim);
     }
 
-    public void consultarSaldo() {
-        System.out.println("Saldo atual da conta " + numeroConta + ": R$ " + saldoConta);
+    public Double consultarSaldo() {
+        return saldo
     }
 }
