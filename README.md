@@ -48,6 +48,6 @@ java -cp bin Main
 - Adicione novos exemplos ou correções enviando pull requests.
 - Inclua uma descrição curta do exercício e instruções para execução.
 
-**Licença**: Sinta-se livre para usar estes exemplos para estudo pessoal e treinamento. Se desejar uma licença específica, adicione um arquivo `LICENSE`.
+**Licença**: Sinta-se livre para usar estes exemplos para estudo pessoal e treinamento.
 
 ---
